@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="aqua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c7888ce271.js" crossorigin="anonymous"></script>
+  <script src="/assets/main.bundle.js" defer></script>
+  <title>{{ title }}</title>
+  {% block head %}{% endblock %}
+</head>
+<body class="">
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="card w-96 bg-base-300 shadow-xl">
+      <div class="card-body">
+        <h1 class="card-title items-center justify-center">Beach Cleanup</h1>
+        <p>Connect with friends and the world around you on Beach Cleanup.</p>
+      <form class="space-y-4">
+          <div class="flex space-x-2">
+            <div class="w-full">
+              <input type="email" placeholder="Email address" class="input input-bordered w-full">
+            </div>
+            {# <div class="w-1/2">
+              <input type="password" placeholder="Password" class="input input-bordered w-full">
+            </div> #}
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Log In</button>
+          <div class="flex justify-between items-center">
+            {# <a href="#" class="text-blue-600">Forgot Password?</a> #}
+            {# <button class="btn btn-outline btn-primary">Sign in with HandCash</button> #}
+          </div>
+        </form>
+        </div>
+
+        <div class="divider"></div>
+
+      <div class="card-actions p-3">
+        
+        
+        <button class="btn btn-accent btn-block">Sign in with HandCash</button>
+      </div>
+    </div>
+  </div>
+  {# {% block body %}
+
+  
+    <div class="container py-8">
+      {{ content | safe }}
+    </div>
+  {% endblock %} #}
+</body>
+</html>

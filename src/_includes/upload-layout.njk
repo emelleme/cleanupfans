@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" theme="aqua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/main.bundle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c7888ce271.js" crossorigin="anonymous"></script>
+  <script src="/assets/main.bundle.js" defer></script>
+  <title>{{ title }}</title>
+</head>
+<body class="bg-base-100">
+  <header class="bg-base-300 shadow-md p-4">
+    <div class="container mx-auto">
+      <h1 class="text-xl font-semibold">Beach Cleanup</h1>
+    </div>
+  </header>
+  <main class="min-h-screen container mx-auto py-8">
+    <div class="bg-primary-content p-6 card w-full max-w-md mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">Upload Beach Cleanup Photo</h2>
+      <form class="space-y-4">
+        <div class="space-y-2 flex flex-col">
+          <label for="photo" class="font-semibold">Photo</label>
+          <input type="file" name="photo" id="photo" accept="image/*" class="file-input file-input-accent w-full max-w-xs">
+        </div>
+        <div class="space-y-2 flex flex-col">
+          <label for="caption" class="font-semibold">Caption</label>
+          <textarea name="caption" id="caption" rows="3" class="textarea textarea-bordered" placeholder="Write a caption for your beach cleanup photo"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
