@@ -4,7 +4,37 @@
 {% extends "layout.njk" %}
 
 {% block body %}
-  <main class="container py-8">
-    <h1 class="text-[62px]">More details available soon!</h1>
+  <main class="">
+    <div class="min-h-screen flex items-center justify-center">
+    <div class="card w-96 bg-base-300 shadow-xl">
+      <div class="card-body">
+        <h1 class="card-title items-center justify-center"><img src="/assets/cleanup.png" alt="Beach Cleanup"></h1>
+        <p>Sign Up to support your favorite eco warrior</p>
+      <form class="space-y-4">
+          <div class="flex space-x-2">
+            <div class="w-full">
+              <input type="email" placeholder="Email address" class="input input-bordered w-full">
+            </div>
+            {# <div class="w-1/2">
+              <input type="password" placeholder="Password" class="input input-bordered w-full">
+            </div> #}
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Log In</button>
+          <div class="flex justify-between items-center">
+            {# <a href="#" class="text-blue-600">Forgot Password?</a> #}
+            {# <button class="btn btn-outline btn-primary">Sign in with HandCash</button> #}
+          </div>
+        </form>
+        </div>
+
+        <div class="divider"></div>
+
+      <div class="card-actions p-3">
+        
+        
+        <button class="btn btn-accent btn-block">Sign in with HandCash</button>
+      </div>
+    </div>
+  </div>
   </main>
 {% endblock %}
