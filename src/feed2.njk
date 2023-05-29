@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beach Cleanup Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@latest/dist/alpine.min.js" defer></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white shadow-md p-4">
+    <div class="container mx-auto">
+      <h1 class="text-xl font-semibold"><img src="/assets/cleanup.png" class="h-16" alt="Beach Cleanup"></h1>
+    </div>
+  </header>
+
+  <div class="container mx-auto grid grid-cols-12 gap-4 py-8">
+    <!-- Sidebar -->
+    <div class="col-span-12 md:col-span-3">
+      <div class="space-y-1">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Home</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Notifications</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Payments</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Profile</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Compose new Post</a>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="col-span-12 md:col-span-6">
+      <!-- Replace this section with a loop to generate posts dynamically -->
+      <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+        <img src="https://via.placeholder.com/600x400" alt="Beach cleanup photo" class="w-full h-auto rounded-lg mb-4">
+        <p>Photo caption goes here</p>
+      </div>
+
+      <!-- Another post -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <img src="https://via.placeholder.com/600x400" alt="Beach cleanup photo" class="w-full h-auto rounded-lg mb-4">
+        <p>Another photo caption goes here</p>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-span-12 md:col-span-3 hidden md:block">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4">Related Content</h2>
+        <p>Content related to the current page goes here.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

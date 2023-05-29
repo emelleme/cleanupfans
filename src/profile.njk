@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@latest/dist/alpine.min.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white shadow-md p-4">
+    <div class="container mx-auto">
+      <h1 class="text-xl font-semibold">User Profile</h1>
+    </div>
+  </header>
+
+  <div class="container mx-auto grid grid-cols-12 gap-4 py-8">
+    <!-- Sidebar -->
+    <div class="col-span-12 md:col-span-3">
+      <div class="space-y-1">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Home</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Notifications</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Payments</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Profile</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-blue-100">Compose new Post</a>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="col-span-12 md:col-span-6">
+      <!-- Profile section -->
+      <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+        <div class="relative">
+          <img src="https://via.placeholder.com/600x200" alt="Cover image" class="w-full h-40 object-cover rounded-lg mb-4">
+          <img src="https://via.placeholder.com/150" alt="User profile picture" class="w-24 h-24 object-cover rounded-full absolute -bottom-6 left-4 border-4 border-white">
+        </div>
+        <div class="mt-12">
+          <h2 class="text-2xl font-semibold mb-2">User Name</h2>
+          <p>User bio goes here</p>
+
+          <!-- Foundations affiliated dropdown -->
+          <div class="mt-4 relative">
+            <label for="foundation" class="block text-sm font-medium text-gray-700">Affiliated Foundations</label>
+            <select id="foundation" name="foundation" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+              <option>Foundation 1</option>
+              <option>Foundation 2</option>
+              <option>Foundation 3</option>
+              <option>Foundation 4</option>
+              <option>Foundation 5</option>
+            </select>
+          </div>
+
+          <!-- Subscribe and Quick Tip buttons -->
+          <div class="mt-4 space-y-2">
+            <button class="btn btn-primary btn-block">Subscribe</button>
+            <button class="btn btn-primary btn-block">Quick Tip</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sample posts -->
+      <!-- Replace this section with a loop to generate posts dynamically -->
+      <div class="bg-white p-6 rounded-lg shadow-md mb-4">
+        <img src="https://via.placeholder.com/600x400" alt="Beach cleanup photo" class="w-full h-auto rounded-lg mb-4">
+        <p>Photo caption goes here</p>
+
+        <div class="flex justify-between items-center mt-4">
+          <button class="btn btn-outline btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-gray-500">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </button>
+
+          <button class="btn btn-outline btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-gray-500">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 21v-8m0 0V3m0 8h8m-8 0H3"></path>
+            </svg>
+          </button>
+
+          <button class="btn btn-outline btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-gray-500">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-span-12 md:col-span-3 hidden md:block">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4">Related Content</h2>
+        <p>Content related to the current page goes here.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

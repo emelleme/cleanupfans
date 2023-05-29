@@ -1,7 +1,7 @@
 import Alpine from 'alpinejs'
 
 window.Alpine = Alpine
-
+window.onSignIn = onSignIn;
 // Start Alpine when the page is ready.
 window.addEventListener('DOMContentLoaded', () => {
   Alpine.start()
@@ -16,3 +16,11 @@ window.addEventListener('alpine:initializing', () => {
     toggle() { return this.isOpen = !this.isOpen }
   })
 });
+
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
